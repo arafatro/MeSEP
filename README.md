@@ -23,13 +23,8 @@ Predicting Methylation Site using Sequential Peptide-based Evolutionary PSSM Pro
 
     05. Get All PSSMs
         Run PSSM on the NCBI local blast tool using the "pssm_commands.m" file commands
-        system('C:','-echo');
-        system('cd C:\Program Files\NCBI\blast-2.7.1+\db','-echo');
-        system('makeblastdb -in sequence.fsa -dbtype prot -parse_seqids -out newdatabase -title "newdb"','-echo');
-        system('psiblast -query sequence.fsa -db newdatabase -num_iterations=3 -evalue=0.001 -pseudocount=1 -out psiblastOut.txt -out_ascii_pssm=PSSM -save_each_pssm','-echo');
-
-        Command 1: makeblastdb -in sequence.fsa -dbtype prot -parse_seqids -out newdatabase -title "newdb"
-        Command 2:  psiblast -query sequence.fsa -db newdatabase -num_iterations=3 -evalue=0.001 -pseudocount=1 -out psiblastOut.txt -out_ascii_pssm=PSSM -save_each_pssm
+        > makeblastdb -in sequence.fsa -dbtype prot -parse_seqids -out newdatabase -title "newdb"
+        > psiblast -query sequence.fsa -db newdatabase -num_iterations=3 -evalue=0.001 -pseudocount=1 -out psiblastOut.txt -out_ascii_pssm=PSSM -save_each_pssm
 
     06. Get Total Features
         Run "vectorgenerate.py" to get the features
