@@ -1,7 +1,7 @@
 # MeSEP
 Predicting Methylation Site using Sequential Peptide-based Evolutionary PSSM Profiles
 
-## Flowchart
+## System Diagram
 ![Flowchart](./System Diagram.png)
 
 ## STEPS:  
