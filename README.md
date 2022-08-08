@@ -33,6 +33,8 @@ Predicting Methylation Site using Sequential Peptide-based Evolutionary PSSM Pro
 
     06. Get Total Features
         Run "vectorgenerate.py" to get the features
+        
+    07. Get the newly curated final dataset
 
     08. Get Statistics
         Run "MeSEP.py" to get number of Kmeth sites and non-Kmeth sites
