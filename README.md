@@ -16,7 +16,7 @@ Predicting Methylation Site using Sequential Peptide-based Evolutionary PSSM Pro
         > python ConvertFASTA.py myfile.txt result.fasta
 
     03. CD_HIT to eliminate identical proteins over negative sequence only:
-        Run ""run-1595357618.sh" CDHIT (http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit)
+        Run "run-1595357618.sh" CDHIT (http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit)
 
     04. Get Unique fasta sequence in different files:
         To get the fasta sequence in different files for getting PSSM
