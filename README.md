@@ -2,7 +2,7 @@
 Predicting Methylation Site using Sequential Peptide-based Evolutionary PSSM Profiles
 
 ## System Diagram
-![System Diagram](./XGBoost CV.png)
+![System Diagram](./System Diagram.png)
 
 ## STEPS:  
     01. elm to .csv convert:
