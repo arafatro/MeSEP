@@ -4,7 +4,8 @@ Predicting Methylation Site using Sequential Peptide-based Evolutionary PSSM Pro
 ## System Diagram
 ![System Diagram](./System%20Diagram.png)
 
-## STEPS:  
+## STEPS:
+To run the model, you are requested to thorughly follow the listed steps:
     01. elm to .csv convert:
         Run "Pre-processing.ipynb(.elm to .csv)" with proper function parameters (input is the .elm file downloaded from "http://plmd.biocuckoo.org/download.php"
         Extract the sequences with proper window size to get-
