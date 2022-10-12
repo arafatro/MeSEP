@@ -25,8 +25,18 @@ To run the model, you are requested to thorughly follow the listed steps:
         > makeblastdb -in sequence.fsa -dbtype prot -parse_seqids -out newdatabase -title "newdb"
         > psiblast -query sequence.fsa -db newdatabase -num_iterations=3 -evalue=0.001 -pseudocount=1 -out psiblastOut.txt -out_ascii_pssm=PSSM -save_each_pssm
 
-    05. Get Total Features
+    05. Get All SPD3
+	#
+	By given protein sequences in fasta format, you can run command
+	> ../misc/run_local.sh *.seq
+	to obtain predicted secondary structure, ASA, backbone torsion angles.
+	##
+	If you already have pssm files for your proteins.
+	> ../misc/pred_pssm.py *.pssm
+	The output will be seen in *.spd3    
+    
+    06. Get Total Features
         Run "vectorgenerate.py" to get the total features
 
-    06. Get Model Performance Statistics
+    07. Get Model Performance Statistics
         Run "MeSEP.py" to get number of Kmeth sites and non-Kmeth sites
