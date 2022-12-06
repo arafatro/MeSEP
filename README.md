@@ -1,5 +1,5 @@
 # MeSEP
-MeSEP: Computational Prediction of Lysine Methylation Site using Sequential Evolutionary and Structural Feature Information
+Accurate Prediction of Lysine Methylation Sites Using Evolutionary and Structural-based Information
 
 ## System Diagram
 ![System Diagram](./System%20Diagram.png)
@@ -25,7 +25,7 @@ MeSEP: Computational Prediction of Lysine Methylation Site using Sequential Evol
         > makeblastdb -in sequence.fsa -dbtype prot -parse_seqids -out newdatabase -title "newdb"
         > psiblast -query sequence.fsa -db newdatabase -num_iterations=3 -evalue=0.001 -pseudocount=1 -out psiblastOut.txt -out_ascii_pssm=PSSM -save_each_pssm
 
-    05. Get All SPD3
+    05. Get All SPD2
 	# By given protein sequences in fasta format, you can run command
 	> ../misc/run_local.sh *.seq
 	to obtain predicted secondary structure, ASA, backbone torsion angles.

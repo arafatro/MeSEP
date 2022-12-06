@@ -1,7 +1,7 @@
 import glob, os
 
 def scanfolder():
-    for path, dirs, files in os.walk('/Users/wakilahmad/Documents/SPIDER2_local/misc/'):
+    for path, dirs, files in os.walk('/Users/arafatr/Documents/SPIDER2_local/misc/'):
         flag_faa = 0
         for f in files:
             if f.startswith('PSSM.'):
